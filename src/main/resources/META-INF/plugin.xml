@@ -1,0 +1,17 @@
+<idea-plugin>
+    <id>com.astrild.airefactor</id>
+    <name>AI Refactoring Assistant</name>
+    <vendor>astrild</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <actions>
+        <action id="AIRefactorMethod"
+                class="com.astrild.airefactor.RefactorMethodAction"
+                text="AI Refactor Method"
+                description="Refactor current method using AI">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
