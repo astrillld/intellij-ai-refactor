@@ -3,14 +3,16 @@
     <name>AI Refactoring Assistant</name>
     <vendor>astrild</vendor>
 
+    <description>Simple IntelliJ plugin that extracts a Java method, builds an AI-style refactoring prompt, and shows a suggested refactored version.</description>
+
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.java</depends>
 
     <actions>
-        <action id="AIRefactorMethod"
+        <action id="com.astrild.airefactor.AIRefactorMethod"
                 class="com.astrild.airefactor.RefactorMethodAction"
                 text="AI Refactor Method"
-                description="Refactor current method using AI">
+                description="Show AI-based Java method refactoring suggestion">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
     </actions>
